@@ -1,0 +1,35 @@
+html
+	head
+		+h.headers
+		block title
+			title= site.title
+		+h.load('/template/reset.scss')
+		+h.load('font', 'pure', 'markdown', '/template/style.scss')
+		link(href='https://fonts.googleapis.com/css?family=Josefin+Sans|Julius+Sans+One|Lato',rel='stylesheet')
+
+	body.page-home
+		#header.mod-header
+			h1.site-title:a(href='/?status=loaded')= site.title
+			.mod-nav
+				a(href='/?status=loaded') home
+				for category in  posts.categories
+					a(href=category.url)= category.title
+				
+		block banner
+		#main.main
+			.pure-g
+				.pure-u-23-24.pure-u-md-17-24.layout
+					block content
+		footer#footer.mod-footer
+			.contact= site.socials
+				a.fa.fa-500px(href='https://500px.com/sollrei', target='_blank', title='500px')
+				a.pixiv(href='http://www.pixiv.net/member.php?id=2383290', target='_blank', title='Pixiv')
+					b P
+			.copyright
+				span Powered by
+				a(href="https://www.bitcron.com", target="_blank") Bitcron  
+				span Theme by
+				a(href="http://www.sollrei.me") Sollrei
+		+h.load('jquery')
+		script(src='/template/js/particles.js',type='text/javascript')
+		+h.load('/template/js/index.js')

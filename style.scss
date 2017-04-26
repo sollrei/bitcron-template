@@ -1,0 +1,254 @@
+$border: 1px solid #F2F4F6;
+
+/* ====================
+           global
+   ==================== */
+body {
+    background: #F2F4F6;
+    color: #454034;
+    font: 14px/1.5 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust:none;
+}
+
+.layout {
+    margin: 0 auto;
+}
+
+/* ====================
+           header
+   ==================== */
+.mod-header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+    .site-title {
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        font-weight: 400;
+        margin: 0;
+        font-size: 3em;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}
+
+
+.mod-nav {
+    padding: 10px 0;
+    border-top: $border;
+    text-align: center;
+    a {
+        display: inline-block;
+        padding: 0 20px;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 1.2em;
+    }
+}
+
+
+/* ====================
+           banner
+   ==================== */
+.mod-banner {
+    position: relative;
+    height: 500px;
+    .banner-title {
+        padding-top: 60px;
+        height: 440px;
+        background: rgba(0,0,0,.3);
+        color: #fff;
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        width: 100%;
+        top: 0;
+        font-weight: 400;
+        font-family: 'Julius Sans One', sans-serif;
+        h3 {
+            font-size: 24px;
+            display: inline-block;
+            padding: 0 5px 20px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #fff;
+        }
+        p {
+            font-size: 16px;
+            span {
+                padding-left: 10px;
+            }
+        }
+    }
+    .banner {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+
+#main {
+    position: relative;
+    z-index: 21;
+}
+
+/* ====================
+           posts
+   ==================== */
+.post-list {
+    margin-top: -230px;
+}
+
+.mod-post {
+    padding: 30px;
+    background: #fff;
+    margin-bottom: 30px;
+    .post-title {
+        font-size: 2.5em;
+    }
+    .post-meta {
+        float: left;
+        width: 80px;
+        text-align: center;
+        padding-right: 20px;
+    }
+    .post-date {
+        span {
+            display: block;
+        }
+    }
+    .post-d {
+        font-size: 30px;
+    }
+    .post-main {
+        overflow: hidden;
+    }
+    .post-info {
+        text-align: right;
+        color: #999;
+        font-size: 12px;
+        padding-top: 20px;
+        .fa {
+            margin-right: 6px;
+        }
+	    .tag {
+		    padding: 5px 15px;
+    		display: inline-block;
+    		background: #f4f6f8;
+    		border-radius: 4px;
+		    margin-right: 10px;
+	    }
+    }
+  
+}
+
+/* ====================
+           detail
+   ==================== */
+.detail-page {
+    padding-top: 50px;
+}
+
+.mod-article {
+    background: #fff;
+    padding: 30px;
+    .article-title {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    .post-metas {
+        margin-bottom: 2em;
+        color: #999;
+        font-size: 12px;
+        span {
+            margin-right: 10px;
+        }
+    }
+}
+
+/* ====================
+           side
+   ==================== */
+.mod-side {
+    padding-left: 20px;
+    .side-box {
+        background: #fff;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ====================
+           archive
+   ==================== */
+.archive-title {
+    font-size: 28px;;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 30px;
+}
+
+.mod-archive {
+    background: #fff;
+    padding: 30px;
+    .archive-year {
+        font-size: 28px;
+    }
+    .post-item {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+}
+/* ====================
+           paginator
+   ==================== */
+.paginator {
+    .pre,
+    .next {
+        display: inline-block;
+        padding: 8px 15px;
+        background: #fff;
+    }
+    .next {
+        float: right;
+    }
+}
+
+/* ====================
+           footer
+   ==================== */
+.mod-footer {
+    text-align: center;
+    padding: 30px 0 10px;
+    background: #fff;
+    margin-top: 30px;
+    .fa,
+    .pixiv {
+        font-size: 20px;
+        margin: 0 12px;
+        color: #999;
+        &:hover {
+            color: #58b798;
+        }
+    }
+    .copyright {
+        padding-top: 20px;
+        color: #999;
+        font-family: Lato, sans-serif;
+    }
+    .my_socials {
+        display: inline;
+    }
+}
+
+/*<middle*/
+@media print, screen and (max-width: 48em) {
+
+}
+/*small*/
+@media print, screen and (max-width: 35.5em) {
+
+}
